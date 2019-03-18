@@ -164,17 +164,9 @@ yearLabel.text = String(currentYear);
 
 // zoomout button
 var zoomOutButton = chart.zoomOutButton;
-zoomOutButton.dx = 0;
-zoomOutButton.dy = 0;
-zoomOutButton.marginBottom = 15;
+zoomOutButton.isHidden = false
+zoomOutButton.visibility = 'visible'
 zoomOutButton.parent = chart.rightAxesContainer;
-
-// scrollbar
-chart.scrollbarX = new am4core.Scrollbar();
-chart.scrollbarX.parent = chart.rightAxesContainer;
-chart.scrollbarX.orientation = "vertical";
-chart.scrollbarX.align = "center";
-chart.scrollbarX.exportable = false;
 
 // vertical orientation for zoom out button and scrollbar to be positioned properly
 chart.rightAxesContainer.layout = "vertical";
