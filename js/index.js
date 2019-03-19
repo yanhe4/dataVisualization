@@ -152,7 +152,7 @@ var currentYear = 2017;
 var colorSet = new am4core.ColorSet();
 
 var chart = am4core.create("chartdiv", am4charts.RadarChart);
-chart.numberFormatter.numberFormat = "+#.0°C|#.0°C|0.0°C";
+chart.numberFormatter.numberFormat = "$#.0";
 chart.hiddenState.properties.opacity = 0;
 
 chart.startAngle = 270 - 180;
@@ -240,7 +240,7 @@ series2.clustered = false;
 series2.dataFields.categoryX = "industry";
 series2.tooltipText = "{categoryX}:{valueY.value}";
 // this makes columns to be of a different color, depending on value
-series.heatRules.push({ target: series2.columns.template, property: "fill", minValue: -3, maxValue: 6, min: am4core.color("#673AB7"), max: am4core.color("#F44336"), dataField: "valueY" });
+series.heatRules.push({ target: series2.columns.template, property: "fill", minValue: -3, maxValue: 6, min: am4core.color("#25C33E"), max: am4core.color("#1B8D64"), dataField: "valueY" });
 
 
 // cursor
