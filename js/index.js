@@ -226,7 +226,7 @@ series.columns.template.strokeOpacity = 0;
 series.dataFields.valueY = "value:salary" + currentYear;
 series.clustered = false;
 series.dataFields.categoryX = "industry";
-series.tooltipText = "{categoryX}:{valueY.value}";
+series.tooltipText = "Salary in {categoryX}:{valueY.value}";
 
 // this makes columns to be of a different color, depending on value
 series.heatRules.push({ target: series.columns.template, property: "fill", minValue: -3, maxValue: 6, min: am4core.color("#673AB7"), max: am4core.color("#F44336"), dataField: "valueY" });
@@ -238,7 +238,7 @@ series2.columns.template.strokeOpacity = 0;
 series2.dataFields.valueY = "value:tuition" + currentYear;
 series2.clustered = false;
 series2.dataFields.categoryX = "industry";
-series2.tooltipText = "{categoryX}:{valueY.value}";
+series2.tooltipText = "Tuition fee in {categoryX}:{valueY.value}";
 // this makes columns to be of a different color, depending on value
 series.heatRules.push({ target: series2.columns.template, property: "fill", minValue: -3, maxValue: 6, min: am4core.color("#25C33E"), max: am4core.color("#1B8D64"), dataField: "valueY" });
 
